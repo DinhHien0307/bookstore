@@ -1,16 +1,16 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const Header = () => {
     return (
         <>
             <div id="templatemo_menu">
                 <ul>
-                    <li><a href="index.html" className="current">Home</a></li>
-                    <li><a href="subpage.html">Search</a></li>
-                    <li><a href="subpage.html">Books</a></li>
-                    <li><a href="subpage.html">New Releases</a></li>
-                    <li><a href="#">Company</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/books">Books</Link></li>
+                    <li><Link to="/newreleases">New Releases</Link></li>
+                    <li><Link to="/company">Company</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </div>
 

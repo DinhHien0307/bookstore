@@ -1,17 +1,12 @@
 import React from 'react'
 import Header from "./Header";
 import Footer from "./Footer";
-import ContentLeft from "./ContentLeft";
-import ContentRight from "./ContentRight";
 
-export default function Layout() {
+export default function Layout(props) {
     return (
         <div id="templatemo_container">
             <Header/>
-            <div id="templatemo_content">
-                <ContentLeft />
-                <ContentRight />
-            </div>
+            { props.content }
             <div className="cleaner_with_height">&nbsp;</div>
             <Footer/>
         </div>

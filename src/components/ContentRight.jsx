@@ -1,64 +1,71 @@
-import React from 'react';
+import React, {useState} from 'react';
+import ProductBox from "./ProductBox";
 
 const ContentRight = () => {
+    const [books, setBooks] = useState([
+        {
+            id: 1,
+            title: 'Photography',
+            author: 'Best Author',
+            category: 'Art',
+            slug: 'Etiam luctus. Quisque facilisis suscipit elit. Curabitur...',
+            body: 'Etiam luctus. Quisque facilisis suscipit elit. Curabitur hello anime',
+            image: 'templatemo_image_01.jpg',
+            price: 55,
+        },
+        {
+            id: 2,
+            title: 'Cooking',
+            author: 'New Author',
+            category: 'Cookery book',
+            slug: 'Aliquam a dui, ac magna quis est eleifend dictum....',
+            body: 'EAliquam a dui, ac magna quis est eleifend dictum.hello anime',
+            image: 'templatemo_image_02.jpg',
+            price: 35,
+        },
+        {
+            id: 3,
+            title: 'Gardening',
+            author: 'New Author',
+            category: 'Guide',
+            slug: 'Ut fringilla enim sed turpis.Sed justo dolor, convallis at',
+            body: 'Ut fringilla enim sed turpis.Sed justo dolor, convallis at.hello anime',
+            image: 'templatemo_image_03.jpg',
+            price: 65,
+        },
+        {
+            id: 4,
+            title: 'Sushi Book',
+            author: 'Japanese Name',
+            category: 'Cookery book',
+            slug: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+            body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. hello anime',
+            image: 'templatemo_image_04.jpg',
+            price: 45,
+        },
+        {
+            id: 5,
+            title: 'Rich Dad Poor Dad',
+            author: 'Robert T. Kiyosaki',
+            category: 'Cookery book',
+            slug: 'What the Rich Teach Their Kids About Money That the Poor and Middle Class Do Not!',
+            body: 'It\'s been nearly 25 years since Robert Kiyosaki’s Rich Dad Poor Dad first made waves in the Personal Finance arena.\n' +
+                'It has since become the #1 Personal Finance book of all time... translated into dozens of languages and sold around the world.\n' +
+                '\n' +
+                'Rich Dad Poor Dad is Robert\'s story of growing up with two dads — his real father and the father of his best friend, his rich dad — and the ways in which both men shaped his thoughts about money and investing. The book explodes the myth that you need to earn a high income to be rich and explains the difference between working for money and having your money work for you.',
+            image: 'richdad.jpg',
+            price: 45,
+        }
+    ]);
     return (
         <div id="templatemo_content_right">
-            <div className="templatemo_product_box">
-                <h1>Photography <span>(by Best Author)</span></h1>
-                <img src={require('../images/templatemo_image_01.jpg')} alt="image"/>
-                <div className="product_info">
-                    <p>Etiam luctus. Quisque facilisis suscipit elit. Curabitur...</p>
-                    <h3>$55</h3>
-                    <div className="buy_now_button"><a href="subpage.html">Buy Now</a></div>
-                    <div className="detail_button"><a href="subpage.html">Detail</a></div>
-                </div>
-                <div className="cleaner">&nbsp;</div>
-            </div>
+            {books.map((book) => (
+                <>
+                    <ProductBox key={book.id} book={book}/>
+                </>
 
-            <div className="cleaner_with_width">&nbsp;</div>
-
-            <div className="templatemo_product_box">
-                <h1>Cooking <span>(by New Author)</span></h1>
-                <img src={require('../images/templatemo_image_02.jpg')} alt="image"/>
-                <div className="product_info">
-                    <p>Aliquam a dui, ac magna quis est eleifend dictum.</p>
-                    <h3>$35</h3>
-                    <div className="buy_now_button"><a href="subpage.html">Buy Now</a></div>
-                    <div className="detail_button"><a href="subpage.html">Detail</a></div>
-                </div>
-                <div className="cleaner">&nbsp;</div>
-            </div>
-
-            <div className="cleaner_with_height">&nbsp;</div>
-
-            <div className="templatemo_product_box">
-                <h1>Gardening <span>(by Famous Author)</span></h1>
-                <img src={require('../images/templatemo_image_03.jpg')} alt="image"/>
-                <div className="product_info">
-                    <p>Ut fringilla enim sed turpis. Sed justo dolor, convallis at.</p>
-                    <h3>$65</h3>
-                    <div className="buy_now_button"><a href="subpage.html">Buy Now</a></div>
-                    <div className="detail_button"><a href="subpage.html">Detail</a></div>
-                </div>
-                <div className="cleaner">&nbsp;</div>
-            </div>
-
-            <div className="cleaner_with_width">&nbsp;</div>
-
-            <div className="templatemo_product_box">
-                <h1>Sushi Book <span>(by Japanese Name)</span></h1>
-                <img src={require('../images/templatemo_image_04.jpg')} alt="image"/>
-                <div className="product_info">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                    <h3>$45</h3>
-                    <div className="buy_now_button"><a href="subpage.html">Buy Now</a></div>
-                    <div className="detail_button"><a href="subpage.html">Detail</a></div>
-                </div>
-                <div className="cleaner">&nbsp;</div>
-            </div>
-
-            <div className="cleaner_with_height">&nbsp;</div>
-
+            ))
+            }
             <a href="subpage.html"><img src={require('../images/templatemo_ads.jpg')} alt="ads"/></a>
         </div>
     );
