@@ -4,7 +4,7 @@ const ProductBox = ({book}) => {
     return (
         <div className="templatemo_product_box">
             <div className="title">
-                <h1>{ book.title } <span>(by { book.author_id })</span></h1>
+                <h1>{ book.title } <span>(by { book.author })</span></h1>
             </div>
 
             <img src={book.images} alt="image"/>

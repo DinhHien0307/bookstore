@@ -17,7 +17,7 @@ const ContentRight = () => {
                 const result = {
                     status: res.status + "-" + res.statusText,
                     headers: res.headers,
-                    data: res.data,
+                    data: res.data.data,
                 };
                 setGetResult(result);
             },
