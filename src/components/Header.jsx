@@ -7,7 +7,6 @@ const Header = () => {
             <div id="templatemo_menu">
                 <ul>
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="/books">Books</Link></li>
                     <li><Link to="/newreleases">New Releases</Link></li>
                     <li><Link to="/company">Company</Link></li>
                     <li><Link to="/contact">Contact</Link></li>

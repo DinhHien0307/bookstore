@@ -1,12 +1,12 @@
 import React from 'react';
-import ContentLeft from "../components/ContentLeft";
-import ContentRight from "../components/ContentRight";
 import Layout from "../components/Layout";
+import ContentLeft from "../components/ContentLeft";
+import Detail from "../components/Detail";
 
-const Home = () => {
+const Details = () => {
     const content = <div id="templatemo_content">
         <ContentLeft />
-        <ContentRight />
+        <Detail />
     </div>
     return (
         <>
@@ -15,4 +15,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Details;

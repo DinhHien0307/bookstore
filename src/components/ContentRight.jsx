@@ -1,14 +1,15 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import ProductBox from "./ProductBox";
 import {useQuery} from "react-query";
 import apiClient from "../http-common";
 
 const ContentRight = () => {
 
-    const [getResult, setGetResult] = useState(null);
+    const [getResult, setGetResult] = useState();
+    const [error, setError] = useState();
 
     const {
-        isLoading: isLoadingBooks, isSuccess
+        isLoading: isLoadingBooks, isSuccess, isFetching
     } = useQuery('query-books', async () => {
             return await apiClient.get("/books");
         },
@@ -22,20 +23,15 @@ const ContentRight = () => {
                 setGetResult(result);
             },
             onError: (err) => {
-                setGetResult(err.response?.data || err);
+                setError(err.response?.data || err);
             },
             refetchOnWindowFocus: false,
         });
-
-    useEffect(() => {
-        if (isLoadingBooks) setGetResult("loading...");
-    }, [isLoadingBooks]);
-
+    // TODO handle error.
     return (
         <>
-            {isSuccess && (
+            {isSuccess && !isFetching && (
                 <div id="templatemo_content_right">
-
                     {getResult.data.map((book) => (
                         <>
                             <ProductBox key={book.id} book={book}/>
@@ -43,7 +39,7 @@ const ContentRight = () => {
 
                     ))
                     }
-                    <a href="subpage.html"><img src={require('../images/templatemo_ads.jpg')} alt="ads"/></a>
+                    <a href="#"><img src={require('../images/templatemo_ads.jpg')} alt="ads"/></a>
                 </div>
             )
 

@@ -1,8 +1,8 @@
 import './App.css';
 import Home from "./screens/Home";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {BrowserRouter, Routes, Route, useParams} from "react-router-dom";
 import Company from "./screens/Company";
-import Books from "./screens/Books";
+import Details from "./screens/Details";
 import Contact from "./screens/Contact";
 import NewReleases from "./screens/NewReleases";
 
@@ -11,7 +11,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="books" element={<Books />} />
+          <Route path="books">
+              <Route path=":slug" element={<Details />} />
+          </Route>
           <Route path="company" element={<Company />} />
           <Route path="contact" element={<Contact />} />
           <Route path="newreleases" element={<NewReleases />} />

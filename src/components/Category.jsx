@@ -5,7 +5,7 @@ import apiClient from '../http-common';
 const Category = () => {
     const [getResult, setGetResult] = useState(null);
     const {
-        isLoading: isLoadingCategories, refetch: getAllCategories, isSuccess
+        isLoading: isLoadingCategories, refetch: getAllCategories, isSuccess, isFetching
     } = useQuery('query-categories', async () => {
             return await apiClient.get("/categories");
         },
@@ -32,7 +32,7 @@ const Category = () => {
         <div className="templatemo_content_left_section">
             <h1>Categories</h1>
 
-            {isSuccess && (
+            {isSuccess && !isFetching && (
                 <ul>
                     {
                         getResult.data.map((category) => (

@@ -5,7 +5,7 @@ import BestSellers from "./BestSellers";
 const ContentLeft = () => {
     return (
         <div id="templatemo_content_left">
-            <Category/>
+            <Category />
             <BestSellers />
         </div>
     );
