@@ -5,8 +5,8 @@ import {Link} from "react-router-dom";
 
 export default function SideBar({showSidebar, setShowSidebar}) {
   return (
-      <aside className={`w-[20vw] top-0 left-0 fixed h-full text-black z-1002 ease-in-out duration-300 shadow bg-white
-       ${showSidebar ? "-translate-x-full" : "translate-x-0"}
+      <aside className={`w-[20vw] top-0 left-0 fixed h-full text-black z-50 ease-in-out duration-300 shadow bg-white
+       ${showSidebar ? "translate-x-0" : "-translate-x-full"}
       `}>
         <div className="side-bar-scroller">
           <header className="border-b border-gray-300 py-6 px-8 items-center flex justify-between">

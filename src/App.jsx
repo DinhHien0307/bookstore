@@ -1,5 +1,5 @@
 import './App.css';
-import Home from "./screens/Home";
+import Index from "./screens/Home";
 import {BrowserRouter, Routes, Route, useParams} from "react-router-dom";
 import Company from "./screens/Company";
 import Details from "./screens/Details";
@@ -10,7 +10,7 @@ function App() {
   return (
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Index />} />
           <Route path="books">
               <Route path=":slug" element={<Details />} />
           </Route>
