@@ -1,12 +1,16 @@
 import React from 'react';
 import Header from "../../components/Header";
-import Content from "../../components/Content";
+import Sale from "./Sale";
+import FeatureCategories from "./FeatureCategories";
 
 const Index = () => {
     return (
         <>
             <Header />
-            <Content />
+
+            <Sale />
+            <FeatureCategories />
+
         </>
     );
 };
