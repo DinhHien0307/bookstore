@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bestselling-button:hover {
+    background-color: rgb(254 243 199);
+}
+.bestselling-button[disabled] {
+    background-color: rgb(241 245 249);
+}
+.bestselling-button[disabled] svg {
+    color: rgb(148 163 184);
+}
+.heart-button:hover svg {
+    color: white;
+}

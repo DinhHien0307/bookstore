@@ -16,7 +16,7 @@ export default function NavHead() {
                         {/*Logo.*/}
                         <div className="site-branding z1 pr-8">
                             <Link to="/">
-                                <img alt="logo" className="w-30 h-12 z-0" src={require('../../../assets/logo4.jpg')}/>
+                                <img alt="logo" className="w-30 h-12 z-0" src={require('../../../assets/logo1.jpg')}/>
                             </Link>
                         </div>
 

@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from "../../components/Header";
 import Sale from "./Sale";
-import FeatureCategories from "./FeatureCategories";
+import FeaturedCategories from "./FeaturedCategories";
+import BestSellingSection from "./BestSellingSection";
 
 const Index = () => {
     return (
@@ -9,8 +10,9 @@ const Index = () => {
             <Header />
 
             <Sale />
-            <FeatureCategories />
+            <FeaturedCategories />
 
+            <BestSellingSection />
         </>
     );
 };
