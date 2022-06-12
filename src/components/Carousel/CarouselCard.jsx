@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import Carousel from "react-simply-carousel";
 import {ChevronLeftIcon, ChevronRightIcon} from "@heroicons/react/outline";
-import Card from "./Card";
+import Card from "../Card";
 
-export default function CarouselCard() {
+export default function CarouselCard({data}) {
 
   const [activeSlide, setActiveSlide] = useState(0);
 
@@ -28,7 +28,7 @@ export default function CarouselCard() {
           }}
           onRequestChange={setActiveSlide}
           forwardBtnProps={{
-            children: <ChevronLeftIcon className="w-5 h-5 mx-auto stroke-1" />,
+            children: <ChevronRightIcon className="w-5 h-5 mx-auto stroke-1" />,
             style: {
                 width: 40,
                 height: 40,
@@ -37,12 +37,12 @@ export default function CarouselCard() {
                 border: "1px solid #eae8e4",
                 backgroundcolor: "white",
                 position: "absolute",
-                left: "8%",
+                right: "8%",
             },
             className: "bestselling-button"
           }}
           backwardBtnProps={{
-            children: <ChevronRightIcon className="w-5 h-5 mx-auto stroke-1" />,
+            children: <ChevronLeftIcon className="w-5 h-5 mx-auto stroke-1" />,
             style: {
               width: 40,
               height: 40,
@@ -51,7 +51,7 @@ export default function CarouselCard() {
               border: "1px solid #eae8e4",
               backgroundcolor: "white",
               position: "absolute",
-              right: "8%",
+              left: "8%",
             },
             className: "bestselling-button"
           }}
@@ -60,8 +60,11 @@ export default function CarouselCard() {
           speed={500}
           infinite={false}
       >
-        {Array.from({ length: 8 }).map((item) => (
-            <Card item={item}/>
+        {data && data.map((item) => (
+            <div key={item.id}
+                className="bg-white w-[280px] h-[420px] leading-6 border border-[#eae8e4] box-border group hover:border-[#161619]">
+                <Card key={item.id} item={item} />
+            </div>
         ))}
       </Carousel>
   )

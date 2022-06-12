@@ -9,7 +9,7 @@ export default function MenuSideBar() {
     <>
         <div className="offcanvas-toggler mr-14 p-2">
             <button onClick={() => setShowSidebar(!showSidebar)}>
-                <MenuIcon class="h-8 w-8 text-black" />
+                <MenuIcon className="h-8 w-8 text-black" />
             </button>
         </div>
         <SideBar showSidebar={showSidebar} setShowSidebar={setShowSidebar}/>

@@ -10,21 +10,21 @@ export default function TopBar() {
                     <ul className="topbar-nav-left nav ml-md-n3 flex flex-wrap items-center p-2">
                         <li className="items-center nav-item list-item">
                             <a href="#" className="nav-link py-2 px-4 -ml-4 flex hover:text-red-700">
-                                <QuestionMarkCircleIcon class="h-5 w-5 text-blue-500 mr-2"/>Can we help you?</a>
+                                <QuestionMarkCircleIcon className="h-5 w-5 text-blue-500 mr-2" />Can we help you?</a>
                         </li>
                         <li className="items-center nav-item list-item ">
                             <div className="nav-link p-1 flex">
-                                <PhoneIcon class="h-5 w-5 text-blue-500 mr-2" />+84 903-195-698</div>
+                                <PhoneIcon className="h-5 w-5 text-blue-500 mr-2" />+84 903-195-698</div>
                         </li>
                     </ul>
                     <ul className="topbar-nav-right nav flex flex-wrap">
                         <li className="items-center nav-item list-item">
                             <a href="#" className="nav-link py-2 px-1 flex">
-                                <UserIcon class="h-5 w-5 text-blue-500 hover:text-red-700 mr-2"/></a>
+                                <UserIcon className="h-5 w-5 text-blue-500 hover:text-red-700 mr-2"/></a>
                         </li>
                         <li className="items-center nav-item list-item ">
                             <a href="#" className="nav-link py-2 px-1 flex">
-                                <ShoppingCartIcon class="h-5 w-5 text-blue-500 hover:text-red-700 mr-2" /></a>
+                                <ShoppingCartIcon className="h-5 w-5 text-blue-500 hover:text-red-700 mr-2" /></a>
                         </li>
                     </ul>
                 </div>
