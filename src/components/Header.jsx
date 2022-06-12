@@ -4,14 +4,12 @@ import NavHead from "./HeaderContent/NavHead";
 
 const Header = () => {
     return (
-        <>
-            <div>
-                <header id="site-header">
-                    <TopBar />
-                    <NavHead />
-                </header>
-            </div>
-        </>
+        <div>
+            <header id="site-header">
+                <TopBar />
+                <NavHead />
+            </header>
+        </div>
 );
 
 
