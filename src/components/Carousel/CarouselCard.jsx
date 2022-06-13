@@ -4,7 +4,6 @@ import {ChevronLeftIcon, ChevronRightIcon} from "@heroicons/react/outline";
 import Card from "../Card";
 
 export default function CarouselCard({data}) {
-
   const [activeSlide, setActiveSlide] = useState(0);
 
   return (
