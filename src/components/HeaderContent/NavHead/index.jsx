@@ -11,7 +11,7 @@ export default function NavHead() {
                 <div className="container-fluid px-14">
                     <div className="items-center relative flex flex-wrap">
                         {/*Menu side bar.*/}
-                        <MenuSideBar/>
+                        <MenuSideBar />
 
                         {/*Logo.*/}
                         <div className="site-branding z1 pr-8">

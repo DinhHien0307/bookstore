@@ -13,7 +13,7 @@ export default function SideBar({showSidebar, setShowSidebar}) {
             <h2 className="flex-wrap flex text-lg">SHOP BY CATEGORY</h2>
             <div className="flex-wrap flex">
               <button onClick={() => setShowSidebar(!showSidebar)}>
-                <XIcon class="w-5 h-5" />
+                <XIcon className="w-5 h-5" />
               </button>
             </div>
           </header>
@@ -26,7 +26,7 @@ export default function SideBar({showSidebar, setShowSidebar}) {
                             <Link to={item.path} className="py-4 px-8 flex justify-between text-base hover:bg-pink-50">
                               {item.title}
                               <button className="flex items-center mr-1">
-                                <ChevronRightIcon class="w-4 h-4" />
+                                <ChevronRightIcon className="w-4 h-4" />
                               </button>
                             </Link>
                           </li>

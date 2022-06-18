@@ -63,24 +63,22 @@ export default function FeaturedCategories() {
                         {
                             categories.map((item) => {
                                     return (
-                                        <>
-                                            <li key={item.id}
-                                                className="product-category hover:cursor-pointer px-[15px] list-item grow-0 shrink-0 basis-1/5 max-w-[20%]">
-                                                <Link to={`${item.link}`}
-                                                      className="group-hover:pointer-events-auto text-dark">
-                                                    <div
-                                                        className={`product-category-inner block box-border rounded-xl px-10 py-8 ${item.bgcolor} hover:bg-amber-100`}>
-                                                        <div className="product-category-icon block leading-normal">
-                                                            {item.icon}
-                                                        </div>
-                                                        <div className="product-category-body block leading-normal">
-                                                            <h3 className="overflow-hidden text-ellipsis whitespace-nowrap mt-5 mb-2 font-medium text-[1rem]">{item.title}</h3>
-                                                            Shop Now
-                                                        </div>
+                                        <li key={item.id}
+                                            className="product-category hover:cursor-pointer px-[15px] list-item grow-0 shrink-0 basis-1/5 max-w-[20%]">
+                                            <Link to={`${item.link}`}
+                                                  className="group-hover:pointer-events-auto text-dark">
+                                                <div
+                                                    className={`product-category-inner block box-border rounded-xl px-10 py-8 ${item.bgcolor} hover:bg-amber-100`}>
+                                                    <div className="product-category-icon block leading-normal">
+                                                        {item.icon}
                                                     </div>
-                                                </Link>
-                                            </li>
-                                        </>
+                                                    <div className="product-category-body block leading-normal">
+                                                        <h3 className="overflow-hidden text-ellipsis whitespace-nowrap mt-5 mb-2 font-medium text-[1rem]">{item.title}</h3>
+                                                        Shop Now
+                                                    </div>
+                                                </div>
+                                            </Link>
+                                        </li>
                                     )
                                 }
                             )

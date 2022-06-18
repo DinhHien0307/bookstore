@@ -7,6 +7,7 @@ import FeaturedBooksSection from "./FeaturedBooksSection";
 import Footer from "../../components/Footer";
 import NewReleaseSection from "./NewReleaseSection";
 import FavouriteAuthorsSection from "./FavouriteAuthorsSection";
+import BackToTopButton from "../../components/BackToTopButton";
 
 const Home = () => {
     return (
@@ -30,6 +31,9 @@ const Home = () => {
 
             {/* Featured books section. */}
             <FavouriteAuthorsSection />
+
+            {/* Back to top button. */}
+            <BackToTopButton />
 
             <Footer />
         </>
