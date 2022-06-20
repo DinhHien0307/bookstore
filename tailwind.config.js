@@ -7,6 +7,10 @@ module.exports = {
         extend: {
             backgroundImage: {
                 'homebg-img1': "url('/src/assets/homebg.jpg')"
+            },
+            maxWidth: {
+                '5/12': '41.666667%',
+                '7/12': '58.333333%'
             }
         },
     },

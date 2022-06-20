@@ -8,7 +8,7 @@ export default function Card({item}) {
             <div className="block relative box-border">
                 <div className="card-thumbnail">
                     <img alt="book" className="mx-auto max-w-[100%] h-auto z-0"
-                         src={require(`../../assets/book/${item.image}.jpg`)}/>
+                         src={require(`../../assets/book/${item.image}.jpg`)} />
                     <Link to="#" className="block" tabIndex="0"/>
                 </div>
                 <div className="card-body pt-4 bg-white group-hover:-translate-y-[44px] duration-200 ease-in-out">
