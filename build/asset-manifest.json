@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4775a1b1.css",
+    "main.js": "/static/js/main.2a1fd955.js",
+    "static/js/787.260b441c.chunk.js": "/static/js/787.260b441c.chunk.js",
+    "static/media/quoctethieunhi_1.2_840x320.jpg": "/static/media/quoctethieunhi_1.2_840x320.8b32ebfea39cb00fadb6.jpg",
+    "static/media/bigsale-062022resize_840.jpg": "/static/media/bigsale-062022resize_840.b73d2a8c916f3400427b.jpg",
+    "static/media/sale2.jpg": "/static/media/sale2.11f0b56417647ba0307f.jpg",
+    "static/media/sale1.jpg": "/static/media/sale1.ea853a0e12044ba5a007.jpg",
+    "static/media/sale3.jpg": "/static/media/sale3.3d4f4ea1455f3330a724.jpg",
+    "static/media/sale4.jpg": "/static/media/sale4.1a52264728b17d254a90.jpg",
+    "static/media/templatemo_header_bg.jpg": "/static/media/templatemo_header_bg.2bd923146f7a9d5a3f08.jpg",
+    "static/media/slide1.jpg": "/static/media/slide1.cda7d8048965070c78e6.jpg",
+    "static/media/logo1.jpg": "/static/media/logo1.1803b62b7bd4b5971714.jpg",
+    "static/media/book7.jpg": "/static/media/book7.4a203eeb35831359ee64.jpg",
+    "static/media/book1.jpg": "/static/media/book1.e3b1b990897bd95d7aa0.jpg",
+    "static/media/book6.jpg": "/static/media/book6.1198fe354903a40f7d36.jpg",
+    "static/media/book4.jpg": "/static/media/book4.ca50a512fab3f3c35669.jpg",
+    "static/media/book5.jpg": "/static/media/book5.2cbcb997c339972830aa.jpg",
+    "static/media/book3.jpg": "/static/media/book3.28d516c87f52fb02e168.jpg",
+    "static/media/book16.jpg": "/static/media/book16.d7c9654d0083e87927ed.jpg",
+    "static/media/book9.jpg": "/static/media/book9.3d93e5ceec1609c30111.jpg",
+    "static/media/book2.jpg": "/static/media/book2.c24b31971a5d5fb4c166.jpg",
+    "static/media/book10.jpg": "/static/media/book10.b63a916efdf20a130db3.jpg",
+    "static/media/book14.jpg": "/static/media/book14.d076419019d972046eaa.jpg",
+    "static/media/book18.jpg": "/static/media/book18.4cbb9456e5f41db54c5b.jpg",
+    "static/media/book8.jpg": "/static/media/book8.4cbb9456e5f41db54c5b.jpg",
+    "static/media/book13.jpg": "/static/media/book13.526403f6efbd938007f4.jpg",
+    "static/media/book11.jpg": "/static/media/book11.eb087c6352c42c81299c.jpg",
+    "static/media/book15.jpg": "/static/media/book15.991e69eea80cbcf919a0.jpg",
+    "static/media/book12.jpg": "/static/media/book12.5c04f32fb1effb0aafb2.jpg",
+    "index.html": "/index.html",
+    "main.4775a1b1.css.map": "/static/css/main.4775a1b1.css.map",
+    "main.2a1fd955.js.map": "/static/js/main.2a1fd955.js.map",
+    "787.260b441c.chunk.js.map": "/static/js/787.260b441c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4775a1b1.css",
+    "static/js/main.2a1fd955.js"
+  ]
+}
