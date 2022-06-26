@@ -7,8 +7,19 @@ export default function Card({item}) {
         <div className="card-inner overflow-hidden p-8">
             <div className="block relative box-border">
                 <div className="card-thumbnail">
-                    <img alt="book" className="mx-auto max-w-[100%] h-auto z-0"
-                         src={require(`../../assets/book/${item.image}.jpg`)} />
+                    {
+                        item.image && (
+                            <img alt="book" className="mx-auto max-w-[100%] h-auto z-0"
+                                 src={require(`../../assets/book/${item.image}.jpg`)} />
+                        )
+                    }
+                    {
+                        item.images && (
+                            <img alt="book" className="mx-auto max-w-[100%] h-auto z-0"
+                                 src={`http://localhost:8000${item.images}.jpg`} />
+                        )
+                    }
+
                     <Link to="#" className="block" tabIndex="0"/>
                 </div>
                 <div className="card-body pt-4 bg-white group-hover:-translate-y-[44px] duration-200 ease-in-out">

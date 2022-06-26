@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "../http-common";
 
 const bookApi = {
     getAll: () => {
@@ -8,6 +8,11 @@ const bookApi = {
 
     get: id => {
         const url = `/books/${id}`;
+        return axios.get(url);
+    },
+
+    getFeaturedBook: () => {
+        const url = '/books?view=featured';
         return axios.get(url);
     }
 }

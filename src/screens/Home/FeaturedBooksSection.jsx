@@ -1,8 +1,29 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Card from "../../components/Card";
 import FeaturedBooksData from "./FeaturedBooksData";
+import bookApi from "../../api/bookApi";
 
 export default function FeaturedBooksSection() {
+    const[featuredBook, setFeaturedBook] = useState([]);
+    useEffect(() => {
+        const fetchFeaturedBook = async () => {
+            try {
+                console.log('hien');
+                const response = await bookApi.getFeaturedBook();
+                console.log('Fetch books successfully');
+                setFeaturedBook(response.data);
+                console.log(featuredBook);
+
+            } catch (e) {
+                console.log('fail');
+            }
+        }
+
+        fetchFeaturedBook();
+
+
+    }, []);
+
     return (
       <section className="pb-24">
         <div className="container px-[15px] pb-[15px] m-auto max-w-[1430px]">
@@ -70,7 +91,7 @@ export default function FeaturedBooksSection() {
                      aria-labelledby="tabs-featured-tab">
                     <ul className="products flex flex-wrap">
                             {
-                                FeaturedBooksData && FeaturedBooksData.FeaturedData.map(item =>
+                                featuredBook && featuredBook.map(item =>
                                     <li key={item.id} className="product grow-0 shrink-0 basis-1/6 w-1/6
                                     border border-[#eae8e4] box-border group hover:border-[#161619]">
                                         <Card key={item.id} item={item} />
